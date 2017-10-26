@@ -1,0 +1,68 @@
+
+#include{sciences.mrk}
+
+!gpath{figs}
+!beamer
+!begin
+
+!= Introduction
+!clr
+> Header
+- this is an example without info/comments
+!fig{tux.jpg}
+
+!section Experimental Procedure
+!clr
+> Header
+- this is an example 2
+!info this is here the description of the above image 
+!fig{tux.jpg}
+
+
+!clr
+> Header
+- this is an example 3
+!info again, this is here the description of the above image 
+!fig{tux.jpg}
+
+!section Section
+!clr
+> Header
+- this is an example, with two images
+!figab{tux.jpg}{tux.jpg}
+
+
+!clr
+> Header
+- this is an example, with two images and infos
+!info An info about images
+!figab{tux.jpg}{tux.jpg}
+
+
+!clr
+> Header
+- this is an example with two images
+!figab{tux.jpg}{tux.jpg}
+
+
+!= Conclusions
+!clr
+> Some achievements
+- This presentation was made using Unibeam and Latex
+!bigskip
+- Unibeam is a great C code for making slides
+!bigskip
+- Unibeam can be compiled using TCC on most operating systems.
+!bigskip
+- Unibeam allows to create beautiful presentation and books
+
+!= Thank You
+!clr
+> Header
+- Thank you for your attention !
+- Thank you for your attention !
+- Thank you for your attention !
+- Thank you for your attention !
+
+
+
