@@ -1,5 +1,7 @@
 
 
+
+
 \documentclass[12pt,t]{beamer}
 
 \usepackage{url}
@@ -62,7 +64,7 @@
    \centering
    \includegraphics[width=\textwidth,height=\fitimageht,keepaspectratio]{#3}
    \end{columns}\par
-#4}
+   #4}
 
 
 \usepackage{xparse,calc}
@@ -84,26 +86,55 @@
   #1\par
    \centering
    \includegraphics[width=\textwidth,height=\fitimageht,keepaspectratio]{#2}\par
-#3}
+  #3}
 
+
+
+\graphicspath{{figs/}}
 \begin{document}
 
-\section{Section 1}
 \begin{frame}
 \fitimage{
 \frametitle{\thesection.~\insertsection}
 \begin{itemize}
 \item Header
 \begin{itemize}
-\item this is an example
+\item this is an example 1
 \end{itemize}
 \end{itemize}
 }{tux.jpg}[]
 \end{frame}
 
 
+\section{Section}
+\begin{frame}
+\fitimage{
+\frametitle{\thesection.~\insertsection}
+\begin{itemize}
+\item Header
+\begin{itemize}
+\item this is an example 2
+\end{itemize}
+\end{itemize}
+}{tux.jpg}[this is pict1]
+\end{frame}
 
-\section{Section 2}
+
+
+\begin{frame}
+\fitimage{
+\frametitle{\thesection.~\insertsection}
+\begin{itemize}
+\item Header
+\begin{itemize}
+\item this is an example 3
+\end{itemize}
+\end{itemize}
+}{tux.jpg}[]
+\end{frame}
+
+
+\section{Section}
 \begin{frame}
 \fitimageab{
 \frametitle{\thesection.~\insertsection}
@@ -113,9 +144,27 @@
 \item this is an example
 \end{itemize}
 \end{itemize}
-}{tux.jpg}{tux.jpg}
+}{tux.jpg}{tux.jpg}[this is pict1]
 \end{frame}
 
 
-\end{document}
 
+
+\section{Section}
+\begin{frame}
+\fitimageab{
+\frametitle{\thesection.~\insertsection}
+\begin{itemize}
+\item Header
+\begin{itemize}
+\item this is an example
+\end{itemize}
+\end{itemize}
+}{tux.jpg}{tux.jpg}[]
+\end{frame}
+
+
+
+
+
+\end{document}
