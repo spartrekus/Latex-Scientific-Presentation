@@ -1,5 +1,6 @@
 
-#include{sciences.mrk}
+//#include{sciences.mrk}
+!input{sciences.mrk}
 
 !gpath{figs}
 
